@@ -6,7 +6,7 @@ import os
 # Database connection
 def get_db_connection():
     # Use /tmp/ for Streamlit Cloud (ephemeral file system)
-    db_path = 'clients.db'
+    db_path = '/tmp/clients.db'
     conn = sqlite3.connect(db_path)
     return conn
 
