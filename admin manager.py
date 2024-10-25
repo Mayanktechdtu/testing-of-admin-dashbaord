@@ -3,7 +3,7 @@ from datetime import datetime
 import sqlite3
 
 # Connect to the SQLite database (creates the file if it doesn’t exist)
-conn = sqlite3.connect('clients.db')
+conn = sqlite3.connect('/tmp/clients.db')
 cursor = conn.cursor()
 
 # Create the clients table if it doesn’t exist
